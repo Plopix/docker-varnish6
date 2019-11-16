@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND "noninteractive"
 ENV VCL_CONFIG      "/etc/varnish/default.vcl"
 ENV VARNISHD_PARAMS "-p default_ttl=3600 -p default_grace=3600 -p max_esi_depth=15 -p feature=+esi_disable_xml_check"
 
-ARG PACKAGECLOUD_URL=https://packagecloud.io/install/repositories/varnishcache/varnish62/script.deb.sh
+ARG PACKAGECLOUD_URL=https://packagecloud.io/install/repositories/varnishcache/varnish61/script.deb.sh
 ARG VARNISH_MODULES_VERSION=0.15.0
 
 COPY start.bash /start.bash
